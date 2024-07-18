@@ -1,0 +1,379 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Project 03 Framework</title>
+    <link rel="stylesheet" href="css/main.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+        <script src="js/main.js" defer></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollToPlugin.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/Draggable.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/MotionPathPlugin.min.js"></script>
+
+
+</head>
+
+<body>
+    <!-- * Show preloader as our content loads -->
+    <!-- preloader -->
+    <img id="loading" src="img/loading_spinner.gif" alt="loading...">
+    <!-- * appear once all content has loaded -->
+    <!-- begin presentation button -->
+    <div id="btnContainer">
+        <div id="begin"><br><br><br><br>Start <br>Dreaming</div>
+        <div id="begin_shadow"></div>
+    </div>
+    <!-- * container of all content -->
+    <!-- main wrapper -->
+    <main>
+        <!-- * One section for each screen -->
+        <!-- SCREEN 1 -->
+        <section id="screen1">
+            <img class="zoom_left" id="Star_1" src="img/Screen_1/Asset 35.png">
+            <img class="zoom_left" id="Moon_1" src="img/Screen_1/Asset 36.png">
+            <img class="zoom_left" id="S_Dove_1" src="img/Screen_1/Asset 37.png">
+            <img id="DreamCatch_1" src="img/Screen_1/Asset 38.png">
+            <img class="zoom_left" id="L_Dove_1" src="img/Screen_1/Asset 39.png">
+            <img id="L_feather_1" src="img/Screen_1/Asset 40.png">
+            <img id="R_feather_1" src="img/Screen_1/Asset 40.png">
+            <img class="zoom_center" id="girl_1" src="img/Screen_1/Asset 56.png">
+            <img class="zoom_left" id="mars_1" src="img/Screen_1/Asset 42.png">
+            <img class="zoom_left" id="W_Cloud_1" src="img/Screen_1/Asset 43.png">
+            <img class="zoom_left" id="R_Cloud_1" src="img/Screen_1/Asset 44.png">
+            <img class="zoom_center" id="Ground_1" src="img/Screen_1/Asset 55.png">
+            <div id="L_Feather_Line"></div>
+            <div id="R_Feather_Line"></div>
+            <h1 class="zoom_left" id="title_1">Dream</h1>
+            <audio id="Slide1_1_audio">
+              <source src="audio/Slide1_1.m4a" type="audio/mp4">
+            </audio>
+            <audio id="Slide1_2_audio">
+              <source src="audio/Slide1_2.m4a" type="audio/mp4">
+            </audio>
+            <audio id="rotate_audio">
+              <source src="audio/rotate-movement.mp3" type="audio/mpeg">
+            </audio>
+            <audio id="sparkling_audio">
+              <source src="audio/stars-157679.mp3" type="audio/mpeg">
+            </audio>
+            <!--<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 4 93.04">
+                <defs>
+                  <style>
+                    .cls-1 {
+                      fill: none;
+                      stroke: url(#linear-gradient);
+                      stroke-miterlimit: 10;
+                      stroke-width: 2px;
+                    }
+                  </style>
+                  <linearGradient id="linear-gradient" x1="-2.05" y1="92.82" x2="6.05" y2=".22" gradientUnits="userSpaceOnUse">
+                    <stop offset="0" stop-color="#cbffd3"/>
+                    <stop offset=".95" stop-color="#947bfc"/>
+                    <stop offset="1" stop-color="#9275ff"/>
+                  </linearGradient>
+                </defs>
+                <g id="Background">
+                  <line class="cls-1" x1="3" y1=".02" x2="1" y2="93.02"/>
+                </g>
+              </svg>-->
+        </section>
+        <!-- SCREEN 2 -->
+        <section id="screen2">
+            <h1 id="title_2">The Origin of Dream</h1>
+            <h2 class="wish_left" id="why">Why we <br> Dream ?</h2>
+            <img class="wish_left" id="P_Cloud_2" src="img/Screen_2/Asset 19.png">
+            <img class="wish_left" id="teapot_2" src="img/Screen_2/Asset 20.png">
+            <h3 class="wish_left" id="wish">Representing <b>unconscious wishes </b></h3>
+            <img class="wish_left" id="door_2" src="img/Screen_2/Asset 22.png">
+            <h3 class="wish_left" id="simulation"> <b>Cognitive simulation</b> of real life</h3>
+            <img class="wish_left" id="on_off_2" src="img/Screen_2/Asset 23.png">
+            <img class="wish_left" id="dl_2" src="img/Screen_2/Asset 24.png">
+            <h3 class="wish_left" id="memory">Offline <b>memory processing</b></h3>
+            <img class="zoom_center_2" id="stairs_2" src="img/Screen_2/Asset 25.png">
+            <img class="extra zoom_center_2" id="girl_2" src="img/Screen_2/Asset 26.png">
+            <img class="zoom_center_2" id="dove_2" src="img/Screen_2/Asset 27.png">
+            <img id="R_Cloud_2" src="img/Screen_2/Asset 28.png">
+            <img id="RR_Cloud_2" src="img/Screen_2/Asset 29.png">
+            <img class="zoom_top_2" id="S_Z_2" src="img/Screen_2/Asset 30.png">
+            <img class="zoom_top_2" id="L_Z_2" src="img/Screen_2/Asset 31.png">
+            <img class="zoom_top_2" id="W_Cloud_2" src="img/Screen_2/Asset 32.png">
+            <h2 class="main_text_2" id="main_text_4_2"> Sleep </h2>
+            <img id="PPPP_Cloud_2" src="img/Screen_2/Asset 54.png">
+            <img id="PP_Cloud_2" src="img/Screen_2/Asset 33.png">
+            <img id="PPP_Cloud_2" src="img/Screen_2/Asset 34.png">
+            <h4 id="text_stage1_2">5% <br> Stage 1: <br> Light Sleep</h4>
+            <h4 id="text_stage2_2">50% <br> Stage 2: <br> Eye movement <br> stops and slower <br> brain waves</h4>
+            <h4 id="text_stage3_2">5% <br> Stage 3: <br> Extremely Slow <br> Brain Waves </h4>
+            <h4 id="text_stage4_2">15% <br> Stage 4: <br> Deep Sleep </h4>
+            <h4 id="text_stage5_2">25% <br> Stage 5: <br> Rapid Eye Movement (REM) </h4>
+            <h3 class="main_text_2" id="main_text_1_2"> We <br><br><br><br> and become <br><br> We have vivid <br><br> that contain</h3>
+            <h2 class="main_text_2" id="main_text_2_2"> Uncontrolled </h2>
+            <h2 class="main_text_2" id="main_text_3_2"> Experiences </h2>
+            <h2 class="zoom_center_2" id="text_2_2">Themes</h2>
+            <h2 class="zoom_center_2" id="text_3_2">People</h2>
+            <h2 class="zoom_center_2" id="text_4_2">Objects</h2>
+            <h3 id="text_5_2"> DREAMS HAPPEN!</h3>
+            <img class="extra zoom_center_2" id="Ground_2" src="img/Screen_1/Asset 55.png">
+            <img class="extra" id="L_teapot_2" src="img/Screen_2/Asset 20.png">
+            <h2 class="extra" id="WISH">WISH</h2>
+
+            <audio id="Slide2_1_audio">
+              <source src="audio/Slide2_1.m4a" type="audio/mp4">
+            </audio>
+            <audio id="Slide2_2_audio">
+              <source src="audio/Slide2_2.m4a" type="audio/mp4">
+            </audio>
+            <audio id="Slide2_3_audio">
+              <source src="audio/Slide2_3.m4a" type="audio/mp4">
+            </audio>
+            <audio id="wind_audio">
+              <source src="audio/bubbles-14830.mp3" type="audio/mpeg">
+            </audio>
+            <audio id="cloud_audio">
+              <source src="audio/weightless-192521.mp3" type="audio/mpeg">
+            </audio>
+            
+        </section>
+        <!-- SCREEN 3 -->
+        <section id="screen3">
+            <h1 id="title_3">Characters in Dreams VS Life</h1>
+            <img id="P_Cloud_3" src="img/Screen_3/Asset 46.png">
+            <img class="zoom_top_3" id="star_3" src="img/Screen_3/Asset 47.png">
+            <img class="zoom_top_3" id="moon_3" src="img/Screen_3/Asset 48.png">
+            <img class="chart_1_3" id="pie_chart_1_3" src="img/Screen_3/Asset 49.png">
+            <img class="chart_2_3" id="pie_chart_2_3" src="img/Screen_3/Asset 50.png">
+            <img id="R_Cloud_3" src="img/Screen_3/Asset 51.png">
+            <img class="chart_3_3" id="pie_chart_3_3" src="img/Screen_3/Asset 52.png">
+            <img class="chart_4_3" id="pie_chart_4_3" src="img/Screen_3/Asset 53.png">
+            <img id="girl_3" src="img/Screen_2/Asset 26.png">
+            <img id="Ground_3" src="img/Screen_1/Asset 55.png">
+            <img class="characters_R_3 characters_R_3_E" id="cross_3" src="img/Screen_3/Asset 57.png">
+            <img class="characters_L_3 characters_L_3_E" id="tick_3" src="img/Screen_3/Asset 58.png">
+            <img class="zoom_top_3 characters_R_3_E" id="R_Mini_Cloud_3" src="img/Screen_3/Asset 59.png">
+            <img class="zoom_top_3 characters_L_3_E" id="L_Mini_Cloud_3" src="img/Screen_3/Asset 60.png">
+            <h2 id="dreams_3">Characters <br> in <br> Dreams </h2>
+            <h2 id="life_3">Dreamers <br> in <br> Life </h2>
+            <h3 class="zoom_top_3" id="main_text_1_3"> Do you <br> <span class="highlight2">Know </span><br> the <br><span class="highlight3">Characters</span><br> ?</h3>
+            <h3 class="characters_L_3 characters_L_3_E" id="main_text_2_3"><span class="highlight4">Joyful dreams</span><br> with <br> <span class="highlight4">known people</span></h3>
+            <h3 class="characters_R_3 characters_R_3_E" id="main_text_3_3"><span class="highlight2">Nightmares</span><br> with only <span class="highlight2">14%</span> of<br> known people</h3>
+            <h3 class="chart_1_3" id="chart_title_1_3"> % of <span class="highlight2">Identified Characters </span><br> in Dreams</h3>
+            <h4 class="chart_1_3" id="chart_desc_1_1_3"><span class="highlight1">48% </span><br> A known named person</h4>
+            <h4 class="chart_1_3" id="chart_desc_1_2_3"><span class="highlight1">16% </span><br> Not recognized</h4>
+            <h4 class="chart_1_3" id="chart_desc_1_3_3"><span class="highlight1">35% </span><br> by Occupations <br> or <br> relationships</h4>
+            <h3 class="chart_2_3" id="chart_title_2_3"> % of <span class="highlight2">Identification</span> Among <br> <span class="highlight2">Named Characters </span></h3>
+            <h4 class="chart_2_3" id="chart_desc_2_1_3"><span class="highlight1">45%</span><br> Face</h4>
+            <h4 class="chart_2_3" id="chart_desc_2_2_3"><span class="highlight1">44%</span><br> "Just knowing"</h4>
+            <h4 class="chart_2_3" id="chart_desc_2_3_3"><span class="highlight1">21% </span><br> Behaviour</h4>
+            <h4 class="chart_2_3" id="chart_desc_2_4_3"><span class="highlight1">32%</span> <br> Appearance</h4>   
+            <h3 class="chart_3_3" id="chart_title_3_3"> % of <span class="highlight2">Couples</span> Having<br> <span class="highlight2">Relationship-Related</span><br>Dreams </h3>
+            <h4 class="chart_3_3" id="chart_desc_3_1_3"><span class="highlight1">61%<br>Yes</span></h4>
+            <h4 class="chart_3_3" id="chart_desc_3_2_3">39%<br>No</h4>
+            <h3 class="chart_4_3" id="chart_title_4_3"> % of <span class="highlight2">Patients</span> Having <br><span class="highlight2">Nightmares </span> </h3>
+            <h4 class="chart_4_3" id="chart_desc_4_1_3"><span class="highlight1">39%<br>Yes</span></h4>
+            <h4 class="chart_4_3" id="chart_desc_4_2_3">61%<br>No</h4>
+            <img class="zoom_top_3" id="mars_3" src="img/Screen_3/Asset 62.png">
+            <img class="zoom_top_3" id="R_Cloud_N_3" src="img/Screen_3/Asset 63.png">
+            <img class="zoom_top_3" id="door_3" src="img/Screen_3/Asset 64.png">
+            <img class="zoom_top_3" id="carpet_3" src="img/Screen_3/Asset 65.png">
+
+            <audio id="Slide3_1_audio">
+              <source src="audio/Slide3_1.m4a" type="audio/mp4">
+            </audio>
+            <audio id="Slide3_2_audio">
+              <source src="audio/Slide3_2.m4a" type="audio/mp4">
+            </audio>
+            <audio id="Slide3_3_audio">
+              <source src="audio/Slide3_3.m4a" type="audio/mp4">
+            </audio>
+            <audio id="joyful_dream_audio">
+              <source src="audio/8-bit-dream-land-142093.mp3" type="audio/mpeg">
+            <audio id="horror_dream_audio">
+              <source src="audio/creepy-ambient-7539.mp3" type="audio/mpeg">
+            </audio>
+            
+
+        </section>
+        <!-- SCREEN 4 -->
+        <section id="screen4">
+            <h1 id="title_4">Contents and Themes in Dreams</h1>
+            <h2 id="contents_4">Contents </h2>
+            <h2 id="themes_4">Themes</h2>
+            <h3 class="zoom_top_4" id="main_text_1_4">Dreams Convert <span class="highlight2">Personal Experiences</span> into <span class="highlight2">Memories</span></h3>
+            <h3 class="L_Memory" id="main_text_2_4"><span class="highlight2">Lower </span> incorporation from <br> <span class="highlight2">2 - 4 Days </span>before the dream</h3>
+            <h3 class="R_Memory" id="main_text_3_4"><span class="highlight2">Increased </span> incorporation from <br> <span class="highlight2">5 - 7 Days</span> before the dream</h3>
+            <h3 class="chart_1_4" id="chart_title_1_4"> % of Contents from <span class="highlight2">Memories</span></h3>
+            <h4 class="chart_1_4" id="chart_desc_1_1_4"><span class="highlight1">80% </span><br> of dreams are basically formed by our <span class="highlight2"> long-lasting memories </span></h4>
+            <h4 class="chart_1_4" id="chart_desc_1_2_4"><span class="highlight1">19.5% </span><br> Unknown</h4>
+            <h4 class="chart_1_4" id="chart_desc_1_3_4"><span class="highlight1">0.5% </span><br> Memories of Specific Events</h4>
+            <h3 class="chart_2_4_E chart_2_4" id="chart_title_2_4"> % of Dreams <span class="highlight2">Reflecting</span> Recent <span class="highlight2">Waking Life Experience</span></h3>
+            <h4 class="chart_2_4_E chart_2_4" id="chart_desc_2_1_4"><span class="highlight1">65% </span><br> Yes</h4>
+            <h4 class="chart_2_4_E chart_2_4" id="chart_desc_2_2_4"><span class="highlight1">35% </span><br> No</h4>
+            <h3 class="graph_1_4" id="graph_desc_1_1_4">Fear of Embarrassment</h4>
+            <h3 class="graph_1_4" id="graph_desc_1_2_4">Being Nude</h4>
+            <h3 class="graph_2_4" id="graph_desc_2_1_4">Sexual Concepts</h4>
+            <h3 class="graph_2_4" id="graph_desc_2_2_4">Flying</h4>
+            <h3 class="chart_2_4_E graph_3_4" id="graph_desc_3_1_4">Interpersonal Relationships</h4>
+            <h4 class="chart_2_4_E graph_3_4" id="graph_desc_3_2_4">Friends</h4>
+            <h3 class="chart_2_4_E graph_3_4" id="graph_desc_3_4_4">Being Chased</h4>
+            <img class="goingup" id="girl_4" src="img/Screen_2/Asset 26.png">
+            <img id="Ground_4" src="img/Screen_1/Asset 55.png">
+            <img id="P_Cloud_4" src="img/Screen_4/Asset 36.png">
+            <img id="R_Cloud_4" src="img/Screen_4/Asset 37.png">
+            <img class="zoom_top_4" id="Moon_4" src="img/Screen_4/Asset 38.png">
+            <img class="zoom_top_4" id="Star_4" src="img/Screen_4/Asset 39.png">
+            <img class="R_Memory zoom_top_4" id="R_Memories_4" src="img/Screen_4/Asset 43.png">
+            <img class="L_Memory zoom_top_4" id="L_Memories_4" src="img/Screen_4/Asset 44.png">
+            <img class="chart_1_4" id="pie_chart_1_4" src="img/Screen_4/Asset 40.png">
+            <img class="chart_2_4_E chart_2_4" id="pie_chart_2_4" src="img/Screen_4/Asset 41.png">
+            <img class="chart_2_4_E" id="dinosaur_4" src="img/Screen_4/Asset 48.png">
+            <img class="chart_2_4_E graph_3_4" id="kid_4" src="img/Screen_4/Asset 49.png">
+            <img class="graph_2_4" id="carpet_4" src="img/Screen_4/Asset 45.png">
+            <img class="zoom_top_4 goingup" id="carpet_L_4" src="img/Screen_4/Asset 57.png">
+            <img class="graph_2_4" id="R_Small_Cloud_1_4" src="img/Screen_4/Asset 42.png">
+            <img class="graph_2_4" id="R_Small_Cloud_2_4" src="img/Screen_4/Asset 42.png">
+            <img class="chart_2_4_E graph_3_4" id="dotted_dinosaur_4" src="img/Screen_4/Asset 58.png">
+            <img class="graph_2_4" id="dotted_carpet_4" src="img/Screen_4/Asset 59.png">
+            <img class="graph_1_4" id="mosaic_4" src="img/Screen_4/Asset 46.png">
+            <img class="graph_1_4" id="dotted_body_4" src="img/Screen_4/Asset 52.png">
+            <audio id="Slide4_1_audio">
+              <source src="audio/Slide4_1.m4a" type="audio/mp4">
+            </audio>
+            <audio id="Slide4_2_audio">
+              <source src="audio/Slide4_2.m4a" type="audio/mp4">
+            </audio>
+            <audio id="Slide4_3_audio">
+              <source src="audio/Slide4_3.m4a" type="audio/mp4">
+            </audio>
+            <audio id="dinosaur_audio">
+              <source src="audio/dinosaur-2-86565.mp3" type="audio/mpeg">
+            </audio>
+            <audio id="fly_audio">
+              <source src="audio/little-whoosh-2-6301.mp3" type="audio/mpeg">
+            </audio>
+            <audio id="run_audio">
+              <source src="audio/twitch-saw-165155.mp3" type="audio/mpeg">
+            </audio>
+            <audio id="whoosh_audio">
+              <source src="audio/futuristic-zoom-whoosh-1-183976.mp3" type="audio/mpeg">
+            </audio>
+            <audio id="wind_chimes_audio">
+              <source src="audio/wind-chimes-no-background-noise-57238.mp3" type="audio/mpeg">
+            </audio>
+            
+
+        </section>
+        <!-- SCREEN 5 -->
+        <section id="screen5">
+            <h1 id="title_5">Forgetting and Recalling Dreams</h1>
+            <img class="DreamCatch_3_E" id="girl_5" src="img/Screen_2/Asset 26.png">
+            <img id="Ground_5" src="img/Screen_1/Asset 55.png">
+            <img class="graph_2_5" id="P_heart_5" src="img/Screen_5/Asset 52.png">
+            <img class="graph_2_5" id="W_heart_5" src="img/Screen_5/Asset 55.png">
+            <h4 class="graph_2_5" id="graph_desc_2_1_5"> Frequent dreamers are <span class="highlight1">“highly insecured” </span>, or <span class="highlight1">“preoccupied”</span> with things in life.  </h4>
+            <h2 class="graph_1_5" id="text_dreams_5"><span class="highlight2">BAD </span>to <span class="highlight2">RECALL</span> Dreams ?</h2>
+            <img id="L_ghost_5" src="img/Screen_5/Asset 59.png">
+            <img id="R_ghost_5" src="img/Screen_5/Asset 60.png">
+            <h4 class="graph_1_5" id="graph_desc_1_1_5"> Dream recall was lowest for the <br><span class="highlight1">“avoidant” </span> subjects </h4>
+            <h3 class="zoom_top_5" id="main_text_1_5"> Most People <br> over <br> <span class="highlight2">Age 10+ <br></span> dream <br><span class="highlight2"> 4 - 6 Times </span> <br> each night</h3>
+            <div id="cloud_floating">
+            <img class="lucid_dream_group" id="Cloud_5" src="img/Screen_5/Asset 53.png">
+            <h3 class="lucid_dream_group" id="main_text_2_5"> In <span class="highlight2"> LUCID DREAMS</span>, dreamers can be conscious </h3>
+            </div>
+            <img class="zoom_top_5 pac_man_eat" id="DreamCatch_1_5" src="img/Screen_5/Asset 54.png">
+            <img class="pac_man_eat" id="DreamCatch_1_L_feather_5" src="img/Screen_5/Asset 56.png">
+            <img class="pac_man_eat" id="DreamCatch_1_R_feather_5" src="img/Screen_5/Asset 56.png">
+            <div class="pac_man_eat" id="L_Feather_Line_1_5"></div>
+            <div class="pac_man_eat" id="R_Feather_Line_1_5"></div>
+            <img class="zoom_top_5" id="DreamCatch_2_5" src="img/Screen_5/Asset 54.png">
+            <img id="DreamCatch_2_L_feather_5" src="img/Screen_5/Asset 56.png">
+            <img id="DreamCatch_2_R_feather_5" src="img/Screen_5/Asset 56.png">
+            <div id="L_Feather_Line_2_5"></div>
+            <div id="R_Feather_Line_2_5"></div>
+            <img class="zoom_top_5 DreamCatch_3 DreamCatch_3_E" id="DreamCatch_3_5" src="img/Screen_5/Asset 54.png">
+            <img class="DreamCatch_3 DreamCatch_3_E" id="DreamCatch_3_L_feather_5" src="img/Screen_5/Asset 56.png">
+            <img class="DreamCatch_3 DreamCatch_3_E" id="DreamCatch_3_R_feather_5" src="img/Screen_5/Asset 56.png">   
+            <div class="DreamCatch_3 DreamCatch_3_E" id="L_Feather_Line_3_5"></div>
+            <div class="DreamCatch_3 DreamCatch_3_E" id="R_Feather_Line_3_5"></div>        
+            <img class="zoom_top_5" id="DreamCatch_4_5" src="img/Screen_5/Asset 54.png">
+            <img id="DreamCatch_4_L_feather_5" src="img/Screen_5/Asset 56.png">
+            <img id="DreamCatch_4_R_feather_5" src="img/Screen_5/Asset 56.png">
+            <div id="L_Feather_Line_4_5"></div>
+            <div id="R_Feather_Line_4_5"></div>     
+            <img class="chart_1_5" id="pie_chart_1_5" src="img/Screen_5/Asset 57.png">
+            <h3 class="chart_1_5" id="chart_title_1_5"> % of People <span class="highlight2">Forgetting</span> Dreams After Waking Up</h3>
+            <h4 class="chart_1_5" id="chart_desc_1_1_5"><span class="highlight1">50% </span><br> After 5 mins </h4>
+            <h4 class="chart_1_5" id="chart_desc_1_2_5"><span class="highlight1">90% </span><br> After 10 mins </h4>
+            <img class="chart_2_5" id="pie_chart_2_5" src="img/Screen_5/Asset 58.png">
+            <h3 class="chart_2_5" id="chart_title_2_5"> % of People <span class="highlight1"> Having Awakening Dreams</span> </h3>
+            <h4 class="chart_2_5" id="chart_desc_2_1_5"><span class="highlight1">20% </span> <br> <span class="highlight4"> More than once a month </span></h4>
+            <h4 class="chart_2_5" id="chart_desc_2_2_5"><span class="highlight1">40% </span><br> Awakening Dreams once a month </h4>
+            <h4 class="chart_2_5" id="chart_desc_2_3_5"><span class="highlight1">40% </span><br> No Awakening Dreams in lifetime </h4>
+            <img id="pac_man_1" src="img/Screen_4/Asset 1.png">
+            <img id="pac_man_2" src="img/Screen_4/Asset 2.png">
+
+            <audio id="Slide5_4_audio">
+              <source src="audio/Slide5_4.m4a" type="audio/mp4">
+            </audio>
+            <audio id="Slide5_5_audio">
+              <source src="audio/Slide5_5.m4a" type="audio/mp4">
+            </audio>
+            <audio id="Slide5_2_audio">
+              <source src="audio/Slide5_2.m4a" type="audio/mp4">
+            </audio>
+            <audio id="Slide5_3_audio">
+              <source src="audio/Slide5_3.m4a" type="audio/mp4">
+            </audio>
+            <audio id="ghost_horror_audio">
+              <source src="audio/scream-85218.mp3" type="audio/mpeg">
+            </audio>
+            <audio id="pac_man_audio">
+              <source src="audio/playing-pac-man-6783.mp3" type="audio/mpeg">
+            </audio>
+            <audio id="heartbeat_audio">
+              <source src="audio/hearbeat-71701.mp3" type="audio/mpeg">
+            </audio>
+            
+            
+
+        </section>
+        <!-- SCREEN 6 -->
+        <section id="screen6">
+            <h1 id="title_6">References</h1>
+            <img id="DreamCatch_6" src="img/Screen_1/Asset 38.png">
+            <img id="L_feather_6" src="img/Screen_1/Asset 40.png">
+            <img id="R_feather_6" src="img/Screen_1/Asset 40.png">
+            <img class="zoom_center_6" id="girl_6" src="img/Screen_1/Asset 56.png">
+            <img class="zoom_center_6" id="Ground_6" src="img/Screen_1/Asset 55.png">
+            <div id="L_Feather_Line_6"></div>
+            <div id="R_Feather_Line_6"></div>
+            <p id="left_references_6">[1] MediLexicon International. (n.d.). Dreams: Causes, types, meaning, what they are, and more. Medical News Today. <span class="highlight5">https://www.medicalnewstoday.com/articles/284378#what-are-dreams </span>
+              <br><br>
+              [2]Winkle’s, V. (2017, December 7). What is lucid dreaming, and how does it work?. HuffPost. <br> <span class="highlight5">https://www.huffpost.com/entry/what-is-lucid-dreaming-an_b_7663492 </span>
+              <br><br>
+              [3]Selterman, D., Apetroaia, A., & Waters, E. (2012). Script-like attachment representations in dreams containing current romantic partners. Attachment & human development.  <span class="highlight5">https://www.ncbi.nlm.nih.gov/pubmed/22856620</span></p>
+            <p id="right_references_6">
+              [4] dreams: FAQ. dreamresearch.net. (n.d.). <br><span class="highlight5">https://dreams.ucsc.edu/FAQ/</span>
+              <br><br>
+              [5]Schredl, M., Ciric, P., Götz, S., & Wittmann, L. (2004, November). Typical dreams: Stability and gender differences. The Journal of psychology. <span class="highlight5">https://www.ncbi.nlm.nih.gov/pubmed/15612605</span> 
+              <br><br>
+              [6]Boston University Medical campusthe mcnamara lab. The McNamara Lab RSS. (n.d.). <br><span class="highlight5">https://www.bumc.bu.edu/len/about-our-research-staff/about-dr-mcnamara/</span>
+              <br><br>
+              [7] Pixabay Royal-free Music<br><span class="highlight5">https://pixabay.com/sound-effects/</span>
+            </p>
+        </section>
+        <!-- nav -->
+        <div id="prev">&#8673;</div>
+        <div id="next">&#8675;</div>
+    </main>
+
+    <audio id="Slide_all_audio">
+      <source src="audio/moonlight.mp3" type="audio/mpeg">
+    </audio>
+</body>
+</html>
